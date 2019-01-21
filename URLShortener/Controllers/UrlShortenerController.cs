@@ -41,5 +41,11 @@ namespace URLShortener.Controllers
 
 			return Redirect(response);
 		}
+
+		[HttpGet]
+		public IActionResult HealthCheck()
+		{
+			return Ok("UP");
+		}
 	}
 }	
